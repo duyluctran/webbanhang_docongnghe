@@ -1,8 +1,18 @@
-import { lazy } from 'react';
+import routes from 'configs/routes.json';
+import { lazy, LazyExoticComponent } from 'react';
 
-export const routers = [
+interface RouteInfo {
+  keyPath: Array<keyof typeof routes>[0];
+  element: LazyExoticComponent<() => JSX.Element>;
+}
+
+export const routers: RouteInfo[] = [
   {
-    path: '/',
+    keyPath: 'Home',
     element: lazy(() => import('features/home')),
+  },
+  {
+    keyPath: 'User',
+    element: lazy(() => import('features/user')),
   },
 ];

@@ -1,7 +1,7 @@
 import { ProLayout } from '@ant-design/pro-layout/';
 import { MenuApp, RouteSystem } from './components';
 import './styles/main.scss';
-export default function MainFeature() {
+function MainFeature() {
   return (
     <>
       <ProLayout
@@ -11,9 +11,11 @@ export default function MainFeature() {
         }}
         title='Ecommerce'
         className='main-layout'
+        navTheme='dark'
       >
-        <RouteSystem />
+        {/* <RouteSystem /> */}
       </ProLayout>
     </>
   );
 }
+export default MainFeature;

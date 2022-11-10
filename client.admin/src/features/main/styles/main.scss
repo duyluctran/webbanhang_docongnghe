@@ -1,7 +1,5 @@
-$menu-color: var(--cui-dark,#212333);
-.main-layout{
-    .ant-layout-sider{
-        background: $menu-color !important;
-        height: 100vh;
-    }
+.main-layout {
+  .ant-layout-sider {
+    height: 100vh;
+  }
 }
