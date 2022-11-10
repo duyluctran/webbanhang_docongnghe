@@ -1,0 +1,13 @@
+$color-text: white;
+.menu-app {
+  color: $color-text;
+  opacity: 0.5;
+  .ant-menu-item-active {
+    color: $color-text !important;
+  }
+//   .ant-menu-item{
+//     &:hover{
+//         background-color: red !important    ;
+//     }
+//   }
+}
